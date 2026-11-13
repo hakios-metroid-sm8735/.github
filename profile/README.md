@@ -10,13 +10,14 @@ kernel (XNU) for Android phones, on the **Nothing Phone (3)** (`metroid`, Qualco
 | Part | Status |
 |---|---|
 | Boot from RAM through HakiOS U-Boot (`fastboot boot`, nothing flashed) | works |
-| XNU kernel, first user-space program (`hello`) | works, on one core |
+| XNU kernel, first user-space program (`hello`) | works |
+| All 8 cores | works |
 | Display (ABL's framebuffer, 1260x2800) | partial: no GPU |
 | USB for `xl` (logs, runs, reboot) | partial: as ABL leaves it |
 | Darwin user space | works: home screen, software drawing |
 | Touch | works: FocalTech on SPI, accurate taps |
 | Buttons | works: power, volume up, volume down |
-| All cores, storage, GPU, audio, Wi-Fi, modem | not yet |
+| Storage, GPU, audio, Wi-Fi, modem | not yet |
 
 The full record is [`device.conf`](https://github.com/hakios-metroid-sm8735/hakios-device-metroid/blob/main/device.conf).
 
